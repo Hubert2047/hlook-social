@@ -1,7 +1,29 @@
 .stories {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    position: relative;
+    // display: gird;
+    width: 100%;
+    display: flex;
+    // grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     gap: .8rem;
+    // overflow: hidden;
+    &__left-arrow {
+        position: absolute;
+        top: 50%;
+        left: -3.2rem;
+        font-size: 3rem;
+        color: #000;
+        z-index: 100;
+        cursor: pointer;
+    }
+    &__right-arrow {
+        position: absolute;
+        top: 50%;
+        right: - 3.2rem;
+        font-size: 3rem;
+        color: #000;
+        z-index: 100;
+        cursor: pointer;
+    }
 }
 
 .story {
@@ -9,6 +31,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 1.5rem;
+    min-width: 12rem;
     cursor: pointer;
     &__img {
         width: 100%;

@@ -176,7 +176,27 @@ export const user = {
                 lastName: 'Chan'
             },
             img: 'assets/stories/ocean.jpg'
-        }
+        },
+        // {
+        //     id: 6,
+        //     createBy: {
+        //         userId: 8,
+        //         avatar: 'assets/person/8.jpeg',
+        //         firstName: 'Tania',
+        //         lastName: 'Gerhold'
+        //     },
+        //     img: 'https://img.freepik.com/free-vector/thank-you-wedding-card_23-2148661845.jpg?size=626&ext=jpg&ga=GA1.2.49049126.1644569694'
+        // },
+        // {
+        //     id: 7,
+        //     createBy: {
+        //         userId: 9,
+        //         avatar: 'assets/person/9.jpeg',
+        //         firstName: 'Anna',
+        //         lastName: 'Altenwerth'
+        //     },
+        //     img: 'https://img.freepik.com/free-vector/identity-card-gradient-dynamic-template_23-2149213344.jpg?w=740'
+        // }
     ],
     friends: [{
             userId: 2,
