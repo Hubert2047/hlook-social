@@ -1,0 +1,98 @@
+.post {
+    margin: 2rem 0;
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow);
+    &__header {
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content {
+        font-size: 1.4rem;
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+    &__icon-change {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    &__footer {
+        padding: 1rem;
+    }
+    &__like {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+    &__hr {
+        height: 1px;
+        width: 100%;
+        background-color: var(--grey-color);
+    }
+    &__like-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__like-icon {
+        font-size: 2rem;
+        &--1 {
+            color: var(--lemon-color);
+        }
+        &--2 {
+            color: var(--green-color);
+        }
+    }
+    &__like-count {
+        font-size: 1.3rem;
+        margin-left: .5rem;
+    }
+    &__like-left {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.3rem;
+        cursor: pointer;
+        &>:hover {
+            border-bottom: 1px solid var(--grey-color-4);
+        }
+    }
+    &__btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1rem;
+    }
+    &__btn-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex: 1;
+        padding: 1rem 0;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--grey-color-3);
+        }
+        span {
+            font-size: 1.2rem;
+        }
+        border-radius :var(--border-radius-md);
+        -webkit-border-radius:var(--border-radius-md);
+        -moz-border-radius :var(--border-radius-md);
+        -ms-border-radius :var(--border-radius-md);
+        -o-border-radius :var(--border-radius-md);
+    }
+    &__btn-icon {
+        font-size: 2rem;
+    }
+    border-radius: var(--border-radius-large);
+    -webkit-border-radius: var(--border-radius-large);
+    -moz-border-radius: var(--border-radius-large);
+    -ms-border-radius: var(--border-radius-large);
+    -o-border-radius: var(--border-radius-large);
+}

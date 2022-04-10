@@ -1,0 +1,10 @@
+.home {
+    background-color: var(--grey-color-3);
+    &__main {
+        display: grid;
+        grid-template-columns: 25% 1fr 25%;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        height: 100%;
+    }
+}

@@ -1,0 +1,105 @@
+       .header {
+           position: sticky;
+           top: 0;
+           z-index: 999;
+           padding: var(--main-padding);
+           height: var(--header-heigh);
+           display: grid;
+           background-color: var(--primary-color);
+           grid-template-columns: 5% 20% 1fr 10% 10%;
+           gap: 1.5rem;
+           justify-content: center;
+           align-items: center;
+           box-shadow: var(--box-shadow);
+           &__logo {
+               font-size: 2rem;
+               color: var(--grey-white-color);
+               font-weight: 700;
+               letter-spacing: 1px;
+           }
+           &__search {
+               display: flex;
+               gap: .5rem;
+               align-items: center;
+               background-color: var(--grey-white-color);
+               padding: .5rem;
+               border-radius: 5px;
+               height: 65%;
+           }
+           &__search-icon {
+               font-size: 1.5rem;
+               color: var(--black-color);
+           }
+           &__search-input {
+               width: 100%;
+               background: none;
+               border: none;
+               outline: none;
+           }
+           &__nav {
+               display: flex;
+               list-style: none;
+               justify-content: center;
+               align-items: center;
+               gap: .5rem;
+               font-size: 2.5rem;
+               height: 100%;
+               padding: 0 1rem;
+               fill: var(--grey-white-color);
+           }
+           &__nav-item {
+               text-align: center;
+               cursor: pointer;
+               flex: 1;
+               border-radius: var(--border-radius-md);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 80%;
+               &:hover {
+                   background-color: var(--grey-color-2);
+               }
+               -webkit-border-radius: var(--border-radius-md);
+               -moz-border-radius: var(--border-radius-md);
+               -ms-border-radius: var(--border-radius-md);
+               -o-border-radius: var(--border-radius-md);
+               border-borderRadiusLeftBottom:0
+           }
+           &__nav-icon {
+               fill: var(--grey-white-color);
+               color: var(--grey-white-color);
+           }
+           &__user {
+               color: var(--grey-white-color);
+           }
+           &__icons {
+               list-style: none;
+               display: flex;
+               justify-self: flex-end;
+               gap: 1.5rem;
+               color: var(--grey-white-color);
+           }
+           &__icon {
+               font-size: 2rem;
+           }
+           &__icon-box {
+               position: relative;
+               display: flex;
+               align-items: center;
+               cursor: pointer;
+           }
+           &__icon-text {
+               position: absolute;
+               top: -5px;
+               right: -5px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 1rem;
+               width: 1rem;
+               border-radius: 50%;
+               font-size: .8rem;
+               color: var(--gray-white-color);
+               background-color: var(--red-color);
+           }
+       }

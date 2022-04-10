@@ -1,0 +1,59 @@
+.sidebar {
+    position: sticky;
+    top: 4.5rem;
+    height: 100vh;
+    align-self: start;
+    margin-left: .5rem;
+    &__user {
+        padding: var(--main-padding);
+    }
+    &__tool {
+        list-style: none;
+        margin-top: 1rem;
+    }
+    &__item {
+        padding: var(--main-padding);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        cursor: pointer;
+        border-radius: 3px;
+        &:hover {
+            background-color: var(--grey-color);
+        }
+    }
+    &__icon {
+        font-size: 2.1rem;
+    }
+    &__text {
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+    &:hover {
+        overflow-y: scroll;
+    }
+    &::-webkit-scrollbar {
+        width: .8rem;
+        background-color: var(--grey-color-2);
+    }
+}
+
+.shortcut {
+    margin-top: 1rem;
+    border-top: 1px solid var(--grey-color-2);
+    h3 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        font-weight: 600;
+        padding: var(--main-padding);
+        color: var(--grey-color-2);
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
