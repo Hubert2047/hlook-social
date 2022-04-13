@@ -1,10 +1,8 @@
 .btn {
-    padding: .5em .8em;
-    border-radius: var(--border-radius-md);
-    -webkit-border-radius: var(--border-radius-md);
-    -moz-border-radius: var(--border-radius-md);
-    -ms-border-radius: var(--border-radius-md);
-    -o-border-radius: var(--border-radius-md);
+    padding: .3em .8em;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .sidebarBtn {

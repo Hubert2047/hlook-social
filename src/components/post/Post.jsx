@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import UserPost from '../User/UserPost'
+import UserPost from '../user/UserPost'
 import './post.scss'
 import { BiDotsHorizontalRounded } from "react-icons/bi";
 import { BsEmojiSmileFill } from "react-icons/bs";
@@ -39,6 +39,7 @@ export default function Post({post}) {
                     userAvatar={post.userCreate.avatar}
                     firstName={post.userCreate.firstName}
                     lastName={post.userCreate.lastName}
+                    className={'post__user-name'}
                     />
             <BiDotsHorizontalRounded className='post__icon-change'/>
         </div>

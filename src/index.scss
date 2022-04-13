@@ -11,12 +11,14 @@
     --black-color: #1B1A17;
     --red-color: #FA383E;
     --grey-color: #D8D2CB;
+    --grey-color-1: #303338;
     --grey-color-2: #9A9483;
     --grey-color-3: #F2F3F5;
     --grey-color-4: #8D949E;
     --green-color: #00A400;
     --lemon-color: #F5C33B;
     --purple-color: #9900F0;
+    --blue-color: #3578E5;
     --main-padding: 0 2rem;
     --header-heigh: 4.5rem;
     --box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.1);
@@ -27,5 +29,29 @@
 
 html {
     font-family: 'Roboto', sans-serif;
-    font-size: 62.5%
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+@mixin hoverBefore {
+    &:hover::before {
+        content: ""attr(name)"";
+        position: absolute;
+        color: var(--white-color);
+        bottom: -6px;
+        left: 50%;
+        background-color: var(--grey-color-1);
+        font-size: 1.3rem;
+        padding: .8rem 1.5rem;
+        border-radius: var(--border-radius-md);
+        transform: translate(-50%, 100%);
+        -webkit-transform: translate(-50%, 100%);
+        -moz-transform: translate(-50%, 100%);
+        -ms-transform: translate(-50%, 100%);
+        -o-transform: translate(-50%, 100%);
+        -webkit-border-radius: var(--border-radius-md);
+        -moz-border-radius: var(--border-radius-md);
+        -ms-border-radius: var(--border-radius-md);
+        -o-border-radius: var(--border-radius-md);
+    }
 }

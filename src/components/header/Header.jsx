@@ -6,44 +6,56 @@ import { AiOutlineHome } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { IoIosPeople } from "react-icons/io";
 import { MdOndemandVideo } from "react-icons/md";
+import { SiHomeassistantcommunitystore } from "react-icons/si";
 import './header.scss'
-import User from '../User/User';
+import User from '../user/User';
 import {user} from '../../data/api.js'
-let navBtns =[
+import NavigationButton from '../../components/nav/NavigationButton'
+const navBtns =[
     {
         id:1,
-       isActive:true
+        icon:<AiOutlineHome  className="nav-icon"/>,
+        name:'Home',
+        isActive:true
     },
     {
         id:2,
-      isActive:false
+        icon: <CgProfile className="nav-icon"/>,
+        name:'Profile',
+        isActive:false
     },
     {
         id:3,
-      isActive:false
+        icon: <IoIosPeople className="nav-icon"/>,
+         name:'Group',
+        isActive:false
     },
     {
         id:4,
-       isActive:false
+        icon: <MdOndemandVideo className="nav-icon"/>,
+        name:'Videos',
+        isActive:false
+    },
+     {
+        
+        id:5,
+        icon: <SiHomeassistantcommunitystore className="nav-icon"/>,
+        name:'Marketplace',
+        isActive:false
     }
 
 ]
 export default function Header() {
-    const[NavBtnArray,setNavBtnArray]=useState(navBtns)
-    const navIconActiveStyle={
-        borderBottom: '2px solid #F2F3F5',
-        borderBottomLeftRadius:'0',
-        borderBottomRightRadius:'0',
-    }
-    const HandleNavClick=(id)=>{
+    const[navBtnArray,setNavBtnArray]=useState(navBtns)
+    const handleNavigation=(id)=>{
         let newNavBtns=[]
         let newNavBtn={}
-        navBtns.forEach(x=>{
-            newNavBtn={...x}
-            if(x.id!==id){
-                newNavBtn.isActive=false
+        navBtnArray.forEach(navBtn=>{
+            newNavBtn={...navBtn}
+            if(navBtn.id===id){
+                newNavBtn.isActive=true
             }else{
-                 newNavBtn.isActive=true
+                 newNavBtn.isActive=false
             }
             newNavBtns.push(newNavBtn)
         
@@ -66,42 +78,27 @@ export default function Header() {
         </div>
 {/* header nav */}
         <ul className="header__nav">
-            <li className="header__nav-item"  onClick={()=>{
-                    HandleNavClick(1)
-            }} style={NavBtnArray[0].isActive?navIconActiveStyle:{}}>
-              <AiOutlineHome  className="header__nav-icon"/>
-            </li>
-
-            <li className="header__nav-item"  onClick={()=>{
-                    HandleNavClick(2)
-            }} style={NavBtnArray[1].isActive?navIconActiveStyle:{}}>
-                <CgProfile className="header__nav-icon"/>
-            </li>
-
-            <li className="header__nav-item"  onClick={()=>{
-                    HandleNavClick(3)
-            }} style={NavBtnArray[2].isActive?navIconActiveStyle:{}}>
-                <IoIosPeople className="header__nav-icon"/>
-            </li>
-
-            <li className="header__nav-item"  onClick={()=>{
-                    HandleNavClick(4)
-            }} style={NavBtnArray[3].isActive?navIconActiveStyle:{}}>
-                <MdOndemandVideo className="header__nav-icon"/>
-            </li>     
+             {navBtnArray.map(navBtn=>{
+                 return <NavigationButton 
+                        key={navBtn.id} 
+                        navBtn={navBtn}
+                        handleNavigation={handleNavigation}
+                        />
+                                        
+             })}          
         </ul>
 {/* header icon */}
         <ul className="header__icons">
-            <li className="header__icon-box">
+            <li className="header__icon-box" name="Request">
                 <BsFillPeopleFill  className="header__icon" />
                 <span className="header__icon-text">{requestCount}</span>
             </li>
-                <li className="header__icon-box">
+                <li className="header__icon-box" name='Messenger'>
                 <RiMessengerFill className="header__icon" />
                 <span className="header__icon-text">{mesengerCount}</span>
             </li>
 
-            <li className="header__icon-box">
+            <li className="header__icon-box" name='Notifications'>
                 <FaBell className="header__icon" />
                 <span className="header__icon-text">{notificationCount}</span>
             </li>         

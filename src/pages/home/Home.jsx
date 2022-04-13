@@ -9,9 +9,9 @@ export default function Home() {
     <div className="home">
         <Header/>
         <div className="home__main">
-            <Sidebar/>
-            <Feed/>
-            <Rightbar/>
+            <Sidebar className='home__sidebar'/>
+            <Feed className='home__feed'/>
+            <Rightbar className='home__rightbar'/>
         </div>
     </div>
   )

@@ -1,15 +1,25 @@
-import React from 'react'
-import UserAvatar from '../User/UserAvatar'
+import {React,useState} from 'react'
+import UserAvatar from '../user/UserAvatar'
 import './share.scss'
 import { TiVideo } from "react-icons/ti";
 import { BsFillImageFill ,   BsFillEmojiSmileFill} from "react-icons/bs";
 import {user} from '../../data/api.js'
+import Modal from '../modal/Modal';
+import CreatePost from '../popup/CreatePost';
 export default function Share() {
+  const [isShow,setIsShow] = useState(false)
+  const handleOnclick =() => {
+    setIsShow(pre=>!pre)
+  }
   return (
     <div className="share">
         <div className="share__top">
             <UserAvatar userAvatar={user.avatar} className="share__user"/>
-            <input type="text" className='share__input' placeholder ={`What's on your mind ${user.lastName} ?`}/>
+            <input type="text" 
+                  className='share__input' 
+                  placeholder ={`What's on your mind ${user.lastName} ?`}
+                  onClick ={handleOnclick}
+                  />
         </div>
         <div className="share__hr"/>
         <ul className="share__options">
@@ -28,6 +38,7 @@ export default function Share() {
                 <span>Feeling/activity</span>
             </li>
         </ul>
+      { isShow && <Modal hideModal={handleOnclick} popup={<CreatePost hideCreatePost={handleOnclick}/>}/>}
     </div>
   )
 }

@@ -1,10 +1,26 @@
 .home {
     background-color: var(--grey-color-3);
     &__main {
-        display: grid;
-        grid-template-columns: 25% 1fr 25%;
-        gap: 1.5rem;
-        margin-top: 2rem;
-        height: 100%;
+        display: flex;
+        margin-top: 3rem;
+    }
+    &__sidebar {
+        margin-right: 4rem;
+        position: sticky;
+        top: 4.5rem;
+        left: 0;
+        align-self: start;
+        width: 30%;
+    }
+    &__rightbar {
+        padding-left: 9rem;
+        position: sticky;
+        height: 100vh;
+        top: 4.5rem;
+        width: 30%;
+        align-items: start;
+    }
+    &__feed {
+        width: 40%;
     }
 }

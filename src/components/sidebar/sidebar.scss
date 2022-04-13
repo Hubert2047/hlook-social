@@ -1,8 +1,8 @@
 .sidebar {
     position: sticky;
-    top: 4.5rem;
+    top: 5rem;
     height: 100vh;
-    align-self: start;
+    align-self: flex-start;
     margin-left: .5rem;
     &__user {
         padding: var(--main-padding);

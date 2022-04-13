@@ -1,12 +1,12 @@
 import React from 'react'
-import UserOnline from '../User/UserOnline'
+import UserFriend from '../user/UserFriend'
 import { BiDotsHorizontalRounded,BiVideoPlus ,BiSearch} from "react-icons/bi";
 import './rightbar.scss'
 import '../../data/api.js'
 import { user } from '../../data/api.js';
-export default function Rightbar() {
+export default function Rightbar({className}) {
   return (
-    <div className="rightbar">
+    <div className={"rightbar "+className}>
       <div className="rightbar__header">
           <h3 className="rightbar__title">Contacts</h3>
           <div className="rightbar__header-icons">
@@ -21,8 +21,9 @@ export default function Rightbar() {
               </div>
           </div>
       </div>
-      {user.friends?.map(friend=>{
-        return <UserOnline key={friend.userId} userAvatar={friend.avatar} firstName={friend.firstName} isOnline={friend.isOnline} lastName={friend.lastName}/>
+      {/* <UserFriend friend= {user.friends[0]}/> */}
+      {user.friends.map(friend=>{
+        return <UserFriend key={friend.userId} friend={friend}/>
       })}
     </div>
   )

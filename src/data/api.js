@@ -125,7 +125,337 @@ export const user = {
                     createdAt: "2022-04-08T16:09:45.300Z",
                 }
             ]
-        }
+        },
+        {
+            id: 3,
+            userCreate: {
+                userId: 5,
+                avatar: 'assets/person/5.jpeg',
+                firstName: 'Lina',
+                lastName: 'Ron',
+            },
+            createAt: '2022-02-08T16:09:44.300Z',
+            content: 'Sea so beutiful ',
+            img: 'https://img.freepik.com/free-photo/beautiful-tropical-beach-sea-ocean-with-white-cloud-blue-sky-copyspace_74190-8663.jpg?size=626&ext=jpg&uid=R64289318&ga=GA1.1.428537613.1649566608',
+            likeCount: 1119,
+            commentCount: 3,
+            shareCount: 1201,
+            comments: [{
+                    id: 1,
+                    user: {
+                        userId: 1,
+                        avatar: 'assets/person/hubert.jpg',
+                        firstName: 'Wu',
+                        lastName: 'Hubert'
+                    },
+                    isLiked: false,
+                    body: " this picture so nice",
+                    parentId: null,
+                    createdAt: "2022-04-08T16:09:44.300Z",
+                },
+                {
+                    id: 2,
+                    user: {
+                        userId: 2,
+                        avatar: 'assets/person/2.jpeg',
+                        firstName: 'Alex',
+                        lastName: 'huk'
+                    },
+                    isLiked: false,
+                    body: " how are you",
+                    parentId: null,
+                    createdAt: "2022-04-08T16:09:44.300Z",
+                },
+                {
+                    id: 3,
+                    user: {
+                        userId: 1,
+                        avatar: 'assets/person/hubert.jpg',
+                        firstName: 'Wu',
+                        lastName: 'Hubert'
+                    },
+                    isLiked: false,
+                    body: "Iam Fine !",
+                    parentId: 2,
+                    createdAt: "2022-04-08T16:09:45.300Z",
+                }
+            ]
+        },
+        {
+            id: 4,
+            userCreate: {
+                userId: 5,
+                avatar: 'assets/person/5.jpeg',
+                firstName: 'Lina',
+                lastName: 'Ron',
+            },
+            createAt: '2022-02-08T16:09:44.300Z',
+            content: 'Sea so beutiful ',
+            img: 'https://img.freepik.com/free-photo/beautiful-hawaii-landscape-with-ocean_23-2149082947.jpg?size=626&ext=jpg&uid=R64289318&ga=GA1.1.428537613.1649566608',
+            likeCount: 1119,
+            commentCount: 3,
+            shareCount: 1201,
+            comments: [{
+                    id: 1,
+                    user: {
+                        userId: 9,
+                        avatar: 'assets/person/9.jpeg',
+                        firstName: 'Anna',
+                        lastName: 'Altenwerth',
+                    },
+                    isLiked: false,
+                    body: " this picture so nice",
+                    parentId: null,
+                    createdAt: "2022-04-08T16:09:44.300Z",
+                },
+                {
+                    id: 2,
+                    user: {
+                        userId: 2,
+                        avatar: 'assets/person/2.jpeg',
+                        firstName: 'Alex',
+                        lastName: 'huk'
+                    },
+                    isLiked: false,
+                    body: " how are you",
+                    parentId: null,
+                    createdAt: "2022-04-08T16:09:44.300Z",
+                },
+                {
+                    id: 3,
+                    user: {
+                        userId: 1,
+                        avatar: 'assets/person/hubert.jpg',
+                        firstName: 'Wu',
+                        lastName: 'Hubert'
+                    },
+                    isLiked: false,
+                    body: "Iam Fine !",
+                    parentId: 2,
+                    createdAt: "2022-04-08T16:09:45.300Z",
+                }
+            ]
+        },
+        {
+            id: 5,
+            userCreate: {
+                userId: 10,
+                avatar: 'assets/person/10.jpeg',
+                firstName: 'Ismael',
+                lastName: 'Anderson',
+            },
+            createAt: '2022-02-08T16:09:44.300Z',
+            content: 'Sea so beutiful ',
+            img: 'https://img.freepik.com/free-photo/beautiful-tropical-beach-sea-ocean-with-white-cloud-blue-sky-copyspace_74190-8663.jpg?size=626&ext=jpg&uid=R64289318&ga=GA1.1.428537613.1649566608',
+            likeCount: 1119,
+            commentCount: 3,
+            shareCount: 1201,
+            comments: [{
+                    id: 1,
+                    user: {
+                        userId: 1,
+                        avatar: 'assets/person/hubert.jpg',
+                        firstName: 'Wu',
+                        lastName: 'Hubert'
+                    },
+                    isLiked: false,
+                    body: " this picture so nice",
+                    parentId: null,
+                    createdAt: "2022-04-08T16:09:44.300Z",
+                },
+                {
+                    id: 2,
+                    user: {
+                        userId: 2,
+                        avatar: 'assets/person/2.jpeg',
+                        firstName: 'Alex',
+                        lastName: 'huk'
+                    },
+                    isLiked: false,
+                    body: " how are you",
+                    parentId: null,
+                    createdAt: "2022-04-08T16:09:44.300Z",
+                },
+                {
+                    id: 3,
+                    user: {
+                        userId: 1,
+                        avatar: 'assets/person/hubert.jpg',
+                        firstName: 'Wu',
+                        lastName: 'Hubert'
+                    },
+                    isLiked: false,
+                    body: "Iam Fine !",
+                    parentId: 2,
+                    createdAt: "2022-04-08T16:09:45.300Z",
+                }
+            ]
+        },
+        {
+            id: 6,
+            userCreate: {
+                userId: 5,
+                avatar: 'assets/person/5.jpeg',
+                firstName: 'Lina',
+                lastName: 'Ron',
+            },
+            createAt: '2022-02-08T16:09:44.300Z',
+            content: 'Sea so beutiful ',
+            img: 'https://img.freepik.com/free-photo/beautiful-tropical-beach-sea-ocean-with-white-cloud-blue-sky-copyspace_74190-8663.jpg?size=626&ext=jpg&uid=R64289318&ga=GA1.1.428537613.1649566608',
+            likeCount: 1119,
+            commentCount: 3,
+            shareCount: 1201,
+            comments: [{
+                    id: 1,
+                    user: {
+                        userId: 1,
+                        avatar: 'assets/person/hubert.jpg',
+                        firstName: 'Wu',
+                        lastName: 'Hubert'
+                    },
+                    isLiked: false,
+                    body: " this picture so nice",
+                    parentId: null,
+                    createdAt: "2022-04-08T16:09:44.300Z",
+                },
+                {
+                    id: 2,
+                    user: {
+                        userId: 2,
+                        avatar: 'assets/person/2.jpeg',
+                        firstName: 'Alex',
+                        lastName: 'huk'
+                    },
+                    isLiked: false,
+                    body: " how are you",
+                    parentId: null,
+                    createdAt: "2022-04-08T16:09:44.300Z",
+                },
+                {
+                    id: 3,
+                    user: {
+                        userId: 1,
+                        avatar: 'assets/person/hubert.jpg',
+                        firstName: 'Wu',
+                        lastName: 'Hubert'
+                    },
+                    isLiked: false,
+                    body: "Iam Fine !",
+                    parentId: 2,
+                    createdAt: "2022-04-08T16:09:45.300Z",
+                }
+            ]
+        },
+        {
+            id: 7,
+            userCreate: {
+                userId: 5,
+                avatar: 'assets/person/5.jpeg',
+                firstName: 'Lina',
+                lastName: 'Ron',
+            },
+            createAt: '2022-02-08T16:09:44.300Z',
+            content: 'Sea so beutiful ',
+            img: 'https://img.freepik.com/free-photo/beautiful-tropical-beach-sea-ocean-with-white-cloud-blue-sky-copyspace_74190-8663.jpg?size=626&ext=jpg&uid=R64289318&ga=GA1.1.428537613.1649566608',
+            likeCount: 1119,
+            commentCount: 3,
+            shareCount: 1201,
+            comments: [{
+                    id: 1,
+                    user: {
+                        userId: 1,
+                        avatar: 'assets/person/hubert.jpg',
+                        firstName: 'Wu',
+                        lastName: 'Hubert'
+                    },
+                    isLiked: false,
+                    body: " this picture so nice",
+                    parentId: null,
+                    createdAt: "2022-04-08T16:09:44.300Z",
+                },
+                {
+                    id: 2,
+                    user: {
+                        userId: 2,
+                        avatar: 'assets/person/2.jpeg',
+                        firstName: 'Alex',
+                        lastName: 'huk'
+                    },
+                    isLiked: false,
+                    body: " how are you",
+                    parentId: null,
+                    createdAt: "2022-04-08T16:09:44.300Z",
+                },
+                {
+                    id: 3,
+                    user: {
+                        userId: 1,
+                        avatar: 'assets/person/hubert.jpg',
+                        firstName: 'Wu',
+                        lastName: 'Hubert'
+                    },
+                    isLiked: false,
+                    body: "Iam Fine !",
+                    parentId: 2,
+                    createdAt: "2022-04-08T16:09:45.300Z",
+                }
+            ]
+        },
+        {
+            id: 8,
+            userCreate: {
+                userId: 5,
+                avatar: 'assets/person/5.jpeg',
+                firstName: 'Lina',
+                lastName: 'Ron',
+            },
+            createAt: '2022-02-08T16:09:44.300Z',
+            content: 'Sea so beutiful ',
+            img: 'https://img.freepik.com/free-photo/beautiful-tropical-beach-sea-ocean-with-white-cloud-blue-sky-copyspace_74190-8663.jpg?size=626&ext=jpg&uid=R64289318&ga=GA1.1.428537613.1649566608',
+            likeCount: 1119,
+            commentCount: 3,
+            shareCount: 1201,
+            comments: [{
+                    id: 1,
+                    user: {
+                        userId: 1,
+                        avatar: 'assets/person/hubert.jpg',
+                        firstName: 'Wu',
+                        lastName: 'Hubert'
+                    },
+                    isLiked: false,
+                    body: " this picture so nice",
+                    parentId: null,
+                    createdAt: "2022-04-08T16:09:44.300Z",
+                },
+                {
+                    id: 2,
+                    user: {
+                        userId: 2,
+                        avatar: 'assets/person/2.jpeg',
+                        firstName: 'Alex',
+                        lastName: 'huk'
+                    },
+                    isLiked: false,
+                    body: " how are you",
+                    parentId: null,
+                    createdAt: "2022-04-08T16:09:44.300Z",
+                },
+                {
+                    id: 3,
+                    user: {
+                        userId: 1,
+                        avatar: 'assets/person/hubert.jpg',
+                        firstName: 'Wu',
+                        lastName: 'Hubert'
+                    },
+                    isLiked: false,
+                    body: "Iam Fine !",
+                    parentId: 2,
+                    createdAt: "2022-04-08T16:09:45.300Z",
+                }
+            ]
+        },
     ],
     stories: [{
             id: 1,
@@ -177,26 +507,46 @@ export const user = {
             },
             img: 'assets/stories/ocean.jpg'
         },
-        // {
-        //     id: 6,
-        //     createBy: {
-        //         userId: 8,
-        //         avatar: 'assets/person/8.jpeg',
-        //         firstName: 'Tania',
-        //         lastName: 'Gerhold'
-        //     },
-        //     img: 'https://img.freepik.com/free-vector/thank-you-wedding-card_23-2148661845.jpg?size=626&ext=jpg&ga=GA1.2.49049126.1644569694'
-        // },
-        // {
-        //     id: 7,
-        //     createBy: {
-        //         userId: 9,
-        //         avatar: 'assets/person/9.jpeg',
-        //         firstName: 'Anna',
-        //         lastName: 'Altenwerth'
-        //     },
-        //     img: 'https://img.freepik.com/free-vector/identity-card-gradient-dynamic-template_23-2149213344.jpg?w=740'
-        // }
+        {
+            id: 6,
+            createBy: {
+                userId: 8,
+                avatar: 'assets/person/8.jpeg',
+                firstName: 'Tania',
+                lastName: 'Gerhold'
+            },
+            img: 'https://img.freepik.com/free-vector/thank-you-wedding-card_23-2148661845.jpg?size=626&ext=jpg&ga=GA1.2.49049126.1644569694'
+        },
+        {
+            id: 7,
+            createBy: {
+                userId: 9,
+                avatar: 'assets/person/9.jpeg',
+                firstName: 'Anna',
+                lastName: 'Altenwerth'
+            },
+            img: 'https://img.freepik.com/free-vector/identity-card-gradient-dynamic-template_23-2149213344.jpg?w=740'
+        },
+        {
+            id: 8,
+            createBy: {
+                userId: 7,
+                avatar: 'assets/person/7.jpeg',
+                firstName: 'Cara',
+                lastName: 'Keeling',
+            },
+            img: 'https://img.freepik.com/free-vector/fantasy-mushrooms-flowers-trees-alien-planet-magic-game-plants-isolated-set-unusual-nature-elements-fairy-tale-extraterrestrial-strange-flora-fauna-assets-cartoon-vector-illustration_107791-10918.jpg?size=626&ext=jpg&uid=R64289318&ga=GA1.2.428537613.1649566608'
+        },
+        {
+            id: 9,
+            createBy: {
+                userId: 10,
+                avatar: 'assets/person/10.jpeg',
+                firstName: 'Ismael',
+                lastName: 'Anderson'
+            },
+            img: 'https://img.freepik.com/free-vector/realistic-eid-al-fitr-illustration_23-2149351862.jpg?size=338&ext=jpg&uid=R64289318&ga=GA1.2.428537613.1649566608'
+        }
     ],
     friends: [{
             userId: 2,
@@ -279,9 +629,81 @@ export const user = {
         {
 
             userId: 11,
-            avatar: 'assets/person/1.jpeg',
-            firstName: 'Lina',
-            lastName: 'Ron',
+            avatar: 'https://img.freepik.com/free-photo/horizontal-image-attractive-fashionable-retired-female-wearing-white-shirt-elegant-silk-scarf-daydreaming-home_344912-2203.jpg?size=626&ext=jpg&uid=R64289318&ga=GA1.2.428537613.1649566608',
+            firstName: 'Annamae',
+            lastName: 'Toy',
+            isOnline: false
+
+        },
+        {
+
+            userId: 12,
+            avatar: 'https://img.freepik.com/free-photo/image-handsome-happy-guy-christmas-sweater-smiling-looking-camera-celebrating-xmas-holidays-standing-red-background_1258-63133.jpg?size=626&ext=jpg&uid=R64289318&ga=GA1.2.428537613.1649566608',
+            firstName: 'Dangelo',
+            lastName: 'Orn',
+            isOnline: false
+
+        },
+        {
+
+            userId: 13,
+            avatar: 'https://img.freepik.com/free-photo/lifestyle-people-emotions-casual-concept-thoughtful-stylish-young-woman-smiling-pleased-dreaming-imaging-perfect-plan-have-interesting-idea-thinking-looking-upper-left-corner_1258-59348.jpg?size=626&ext=jpg&uid=R64289318&ga=GA1.2.428537613.1649566608',
+            firstName: 'Jarred',
+            lastName: 'Block',
+            isOnline: false
+
+        },
+        {
+
+            userId: 14,
+            avatar: 'https://img.freepik.com/free-photo/image-modern-asian-woman-standing-park-smiling_197531-22520.jpg?size=626&ext=jpg&uid=R64289318&ga=GA1.2.428537613.1649566608',
+            firstName: 'Jabari',
+            lastName: 'Nikolaus',
+            isOnline: false
+
+        },
+        {
+
+            userId: 15,
+            avatar: 'https://img.freepik.com/free-photo/young-man-arms-outstretched-by-sea-sunrise-enjoying-freedom-life-people-travel-wellbeing-concept_169160-15.jpg?size=626&ext=jpg&uid=R64289318&ga=GA1.2.428537613.1649566608',
+            firstName: 'LiFletcher',
+            lastName: 'McClure',
+            isOnline: false
+
+        },
+        {
+
+            userId: 16,
+            avatar: 'https://img.freepik.com/free-photo/young-man-arms-outstretched-by-sea-sunrise-enjoying-freedom-life-people-travel-wellbeing-concept_169160-15.jpg?size=626&ext=jpg&uid=R64289318&ga=GA1.2.428537613.1649566608',
+            firstName: 'LiFletcher',
+            lastName: 'McClure',
+            isOnline: false
+
+        },
+        {
+
+            userId: 17,
+            avatar: 'https://img.freepik.com/free-photo/young-man-arms-outstretched-by-sea-sunrise-enjoying-freedom-life-people-travel-wellbeing-concept_169160-15.jpg?size=626&ext=jpg&uid=R64289318&ga=GA1.2.428537613.1649566608',
+            firstName: 'LiFletcher',
+            lastName: 'McClure',
+            isOnline: false
+
+        },
+        {
+
+            userId: 18,
+            avatar: 'https://img.freepik.com/free-photo/young-man-arms-outstretched-by-sea-sunrise-enjoying-freedom-life-people-travel-wellbeing-concept_169160-15.jpg?size=626&ext=jpg&uid=R64289318&ga=GA1.2.428537613.1649566608',
+            firstName: 'LiFletcher',
+            lastName: 'McClure',
+            isOnline: false
+
+        },
+        {
+
+            userId: 19,
+            avatar: 'https://img.freepik.com/free-photo/young-man-arms-outstretched-by-sea-sunrise-enjoying-freedom-life-people-travel-wellbeing-concept_169160-15.jpg?size=626&ext=jpg&uid=R64289318&ga=GA1.2.428537613.1649566608',
+            firstName: 'LiFletcher',
+            lastName: 'McClure',
             isOnline: false
 
         }

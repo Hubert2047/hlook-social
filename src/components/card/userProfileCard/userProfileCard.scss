@@ -1,0 +1,44 @@
+.user-profile-card {
+    display: flex;
+    gap: 3rem;
+    padding: 1rem;
+    background-color: var(--white-color);
+    min-height: 18rem;
+    min-width: 40rem;
+    &__avatar {
+        height: 10rem !important;
+        width: 10rem !important;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    &__infor {
+        display: flex;
+        align-items: start;
+        gap: .5rem;
+    }
+    &__text {
+        font-size: 1.3rem;
+    }
+    &__user-name {
+        font-size: 2rem !important;
+        font-weight: 600 !important;
+    }
+    &__icon {
+        font-size: 3rem;
+    }
+    &__state {
+        width: 2rem !important;
+        height: 2rem !important;
+        bottom: 5px !important;
+        right: 5px !important;
+    }
+    border-radius: var(--border-radius-large);
+    -webkit-border-radius: var(--border-radius-large);
+    -moz-border-radius: var(--border-radius-large);
+    -ms-border-radius: var(--border-radius-large);
+    -o-border-radius: var(--border-radius-large);
+    box-shadow: var(--box-shadow);
+}

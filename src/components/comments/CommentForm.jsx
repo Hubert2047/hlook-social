@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import UserAvatar from '../User/UserAvatar'
+import UserAvatar from '../user/UserAvatar'
 import { BsEmojiSmile } from "react-icons/bs";
 import { MdPhotoCamera } from "react-icons/md";
 import { AiOutlineFileGif } from "react-icons/ai";

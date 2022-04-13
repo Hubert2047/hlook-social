@@ -2,8 +2,8 @@ import React,{useState} from 'react'
 import './comments.scss'
 import{calDate} from '../../functions/functions.js'
 import CommentForm from './CommentForm'
-import UserAvatar from '../User/UserAvatar'
-import UserName from '../User/UserName';
+import UserAvatar from '../user/UserAvatar'
+import UserName from '../user/UserName';
 import { AiFillLike } from "react-icons/ai";
 import {user} from '../../data/api.js'
 export default function Comment({

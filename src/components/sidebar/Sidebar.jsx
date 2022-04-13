@@ -1,5 +1,5 @@
 import './sidebar.scss'
-import User from '../User/User';
+import User from '../user/User';
 import { FaUserFriends,FaGamepad } from "react-icons/fa";
 import { AiFillHome } from "react-icons/ai";
 import { BsClockHistory,BsFillBookmarkStarFill ,BsFillQuestionCircleFill} from "react-icons/bs";
@@ -8,9 +8,9 @@ import { MdOutlineEventAvailable,MdOutlineRssFeed } from "react-icons/md";
 import SidebarBtn from '../button/SidebarBtn';
 import {user} from '../../data/api.js'
 import ShortCut from '../shortcut/ShortCut';
-export default function Sidebar() {
+export default function Sidebar({className}) {
   return (
-    <div className="sidebar">
+    <div className={"sidebar " +className}>
           <div className="sidebar__user">
               <User userAvatar={user.avatar} firstName={user.firstName} lastName={user.lastName}/>
           </div>
