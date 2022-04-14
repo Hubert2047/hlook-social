@@ -5,7 +5,7 @@ import { TiVideo } from "react-icons/ti";
 import { BsFillImageFill ,   BsFillEmojiSmileFill} from "react-icons/bs";
 import {user} from '../../data/api.js'
 import Modal from '../modal/Modal';
-import CreatePost from '../popup/CreatePost';
+import CreatePost from '../popup/createPost/CreatePost';
 export default function Share() {
   const [isShow,setIsShow] = useState(false)
   const handleOnclick =() => {

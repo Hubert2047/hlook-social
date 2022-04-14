@@ -6,6 +6,8 @@ import UserAvatar from '../user/UserAvatar'
 import UserName from '../user/UserName';
 import { AiFillLike } from "react-icons/ai";
 import {user} from '../../data/api.js'
+import Modal from '../modal/Modal';
+import CommitCard from '../popup/commitCard/CommitCard';
 export default function Comment({
   comment,
   replies,
@@ -17,6 +19,8 @@ export default function Comment({
 }) {
   const [isCommentLiked,setIsCommentLiked]=useState(comment.isLiked)
   const [commentLikedIconStyle,setCommentLikedIconStyle]=useState({})
+  const [isShowCommitDelete,setIsShowCommitDelete] = useState(false)
+
   const canActionCommentTime=0
   const timePassed = new Date()- new Date(comment.createdAt)>canActionCommentTime
   const canReply =Boolean(user.userId)
@@ -25,6 +29,13 @@ export default function Comment({
   const isReply = activeComment && activeComment.style==='Reply' && activeComment.commentId=== comment.id
   const isEdit = activeComment && activeComment.style==='Edit' && activeComment.commentId=== comment.id
   const commentParentId= comment.parentId?comment.parentId:comment.id
+
+  const hideModal=()=>{
+    setIsShowCommitDelete(false)
+  }
+  const handleDeleteComment=(commentId)=>{
+    DeleteComment(commentId)
+  }
   const handleLikeCommentClick=() => {
     if(isCommentLiked){
         setCommentLikedIconStyle({
@@ -76,11 +87,18 @@ export default function Comment({
                             }}>Edit</div>}
 
           {canDelete && <div className="comment__action" 
-                          onClick={()=>{DeleteComment(comment.id)}}
+                          onClick={       
+                            ()=>{
+                              //open modal commit delete
+                              setIsShowCommitDelete(prev=>!prev)
+                            }
+                          }
                           >Delete</div>}
         </div>
-
+        {/* Call modal when delete btn is called */}
+        {isShowCommitDelete && <Modal hideModal={hideModal} popup={<CommitCard handleDeleteComment={()=>handleDeleteComment(comment.id)} hideModal={hideModal} title={'Delete Comment?'} messenger={'Are you sure you want to delete this comment?'}/>}/>}
         {/* form */}
+
         {isReply && <CommentForm 
                                  userAvatar={user.avatar}
                                  handleSubmit={addComment}
@@ -108,6 +126,7 @@ export default function Comment({
             activeComment={activeComment}
             setActiveComment={setActiveComment}
             addComment={addComment} 
+            handleUpdateComment={handleUpdateComment}
             />
           })}
         </div>

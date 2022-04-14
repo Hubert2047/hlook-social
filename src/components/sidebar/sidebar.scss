@@ -4,8 +4,10 @@
     height: 100vh;
     align-self: flex-start;
     margin-left: .5rem;
-    &__user {
+    &__header {
         padding: var(--main-padding);
+        font-size: 1.8rem;
+        text-transform: capitalize;
     }
     &__tool {
         list-style: none;

@@ -1,8 +1,8 @@
 import {React,useState} from 'react'
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import TypeShare from '../typeShare/TypeShare';
-import UserAvatar from '../user/UserAvatar';
-import UserName from '../user/UserName';
+import TypeShare from '../../typeShare/TypeShare';
+import UserAvatar from '../../user/UserAvatar';
+import UserName from '../../user/UserName';
 import { MdColorLens } from "react-icons/md";
 import { BsEmojiSmile,BsFillFileEarmarkImageFill } from "react-icons/bs";
 import { FaUserTag } from "react-icons/fa";
@@ -11,7 +11,7 @@ import { ImLocation } from "react-icons/im";
 import { GiMicrophone } from "react-icons/gi";
 import { BiDotsHorizontalRounded } from "react-icons/bi";
 import './createPost.scss'
-import {user} from '../../data/api.js'
+import {user} from '../../../data/api.js'
 
 export default function CreatePost({hideCreatePost}) {
     const [text,setText]=useState('')

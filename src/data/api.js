@@ -1,3 +1,13 @@
+import { FaUserFriends, FaGamepad } from "react-icons/fa";
+import { AiFillHome } from "react-icons/ai";
+import { BsClockHistory, BsFillBookmarkStarFill, BsFillQuestionCircleFill } from "react-icons/bs";
+import { GiPodiumWinner } from "react-icons/gi";
+import { MdOutlineEventAvailable, MdOutlineRssFeed } from "react-icons/md";
+import { AiOutlineHome } from "react-icons/ai";
+import { CgProfile } from "react-icons/cg";
+import { IoIosPeople } from "react-icons/io";
+import { MdOndemandVideo } from "react-icons/md";
+import { SiHomeassistantcommunitystore } from "react-icons/si";
 export const user = {
     userId: 1,
     avatar: 'assets/person/hubert.jpg',
@@ -784,60 +794,152 @@ export const user = {
     ]
 
 }
+export const navBtns = [{
+        id: 1,
+        icon: < AiOutlineHome className = "nav-icon" / > ,
+        name: 'Home',
+    },
+    {
+        id: 2,
+        icon: < CgProfile className = "nav-icon" / > ,
+        name: 'Profile',
+    },
+    {
+        id: 3,
+        icon: < IoIosPeople className = "nav-icon" / > ,
+        name: 'Group',
+    },
+    {
+        id: 4,
+        icon: < MdOndemandVideo className = "nav-icon" / > ,
+        name: 'Videos',
+    },
+    {
 
+        id: 5,
+        icon: < SiHomeassistantcommunitystore className = "nav-icon" / > ,
+        name: 'Marketplace',
+    }
 
+]
+export const sidebarItems = [{
+        id: 1,
+        icon: < MdOutlineRssFeed className = "sidebar__icon" / > ,
+        name: 'Feed'
+    },
+    {
+        id: 2,
+        icon: < FaUserFriends className = "sidebar__icon" / > ,
+        name: 'Friends'
 
-// export const getComments = async() => {
-//     return [{
-//             id: "1",
-//             body: "hello this picture so nice",
-//             username: "Jack",
-//             userId: "1",
-//             parentId: null,
-//             createdAt: "2022-04-08T16:09:44.300Z",
-//         },
-//         {
-//             id: "2",
-//             body: "Second comment",
-//             username: "John",
-//             userId: "1",
-//             parentId: null,
-//             createdAt: "2022-04-08T16:09:44.300Z",
-//         },
-//         {
-//             id: "3",
-//             body: "comment 2",
-//             username: "hubert ",
-//             userId: "2",
-//             parentId: "1",
-//             createdAt: "2022-04-08T16:09:44.300Z",
-//         },
-//         {
-//             id: "4",
-//             body: "Second comment second child",
-//             username: "John",
-//             userId: "2",
-//             parentId: "2",
-//             createdAt: "2022-04-08T16:09:44.300Z",
-//         }
-//     ];
-// };
+    },
+    {
+        id: 3,
+        icon: < GiPodiumWinner className = "sidebar__icon" / > ,
+        name: 'Courses'
 
-// export const createComment = async(text, parentId = null) => {
-//     return {
-//         id: Math.random().toString(36).substr(2, 9),
-//         body: text,
-//         parentId,
-//         userId: "1",
-//         username: "John",
-//         createdAt: new Date().toLocaleString(),
-//     };
-// };
+    },
+    {
+        id: 4,
+        icon: < BsFillBookmarkStarFill className = "sidebar__icon" / > ,
+        name: 'Bookmarks'
 
-// export const updateComment = async(text) => {
-//     return { text };
-// };
+    },
+    {
+        id: 5,
+        icon: < AiFillHome className = "sidebar__icon" / > ,
+        name: 'Marketplace'
 
-// export const deleteComment = async() => {
-//     return {};
-// };
+    },
+    {
+        id: 6,
+        icon: < BsClockHistory className = "sidebar__icon" / > ,
+        name: 'Memories'
+
+    },
+    {
+        id: 7,
+        icon: < FaGamepad className = "sidebar__icon" / > ,
+        name: 'Play Game'
+
+    },
+    {
+        id: 8,
+        icon: < BsFillQuestionCircleFill className = "sidebar__icon" / > ,
+        name: 'Questions'
+
+    },
+    {
+        id: 9,
+        icon: < MdOutlineEventAvailable className = "sidebar__icon" / > ,
+        name: 'Event'
+
+    }
+]
+export const categoryProducts = [{
+        id: 1,
+        title: `Today's picks`,
+        address: '新北市',
+        products: [{
+                id: 1,
+                img: 'https://cs-f.ecimg.tw/items/DCACXWA900B9RR4/000001_1624098190.jpg',
+                price: 100,
+                name: '真正4K高畫質 HDMI線  2.0 版 影音傳輸線 公對公 投影機 電視 電腦 線材 轉接 連接(5 M)',
+                address: 'taiwan'
+            },
+            {
+                id: 2,
+                img: 'https://cs-d.ecimg.tw/items/DYAZ12A900BNCBE/000001_1628578043.jpg',
+                price: 409,
+                name: '【防偷窺鋼化膜】iPhone 13 Pro Max 保護貼 i13 Pro Max 玻璃貼 未滿版 鋼化膜 防窺片',
+                address: 'taiwan'
+            },
+            {
+                id: 3,
+                img: 'https://cs-d.ecimg.tw/items/DYAQF4A900D1DF4/000001_1641981190.jpg',
+                price: 100,
+                name: '【 AIWA 日本愛華 】真無線藍芽耳機 AT-X80J',
+                address: 'taiwan'
+            },
+            {
+                id: 4,
+                img: 'https://cs-e.ecimg.tw/items/DRAEC4A900AS2CL/000001_1604027800.jpg',
+                price: 1999,
+                name: 'MONTECH(君主) Air X (黑) 內含ARGB風扇20cm*2+12cm*1/鋼化玻璃/E-ATX 電腦機殼',
+                address: 'taiwan'
+            }
+        ],
+    },
+    {
+        id: 2,
+        title: `Electronics`,
+        address: '台北市',
+        products: [{
+                id: 1,
+                img: 'https://cs-d.ecimg.tw/items/DMAFNDA900EO68T/000001_1646817827.jpg',
+                price: 3900,
+                name: 'SE ELECTRONICS V7 BLACK 動圈式麥克風',
+                address: 'taiwan'
+            },
+            {
+                id: 2,
+                img: 'https://cs-c.ecimg.tw/items/DJBQ3HD900DAX79/000001_1642097399.jpg',
+                price: 3172,
+                name: 'Power Electronics in Renewable Energy Systems and Smart Grid(Kobo/電子書)',
+                address: 'taiwan'
+            }, {
+                id: 3,
+                img: 'https://cs-d.ecimg.tw/items/DJBQ3HD900CM62S/000001_1641726770.jpg',
+                price: 2100,
+                name: 'SE ELECTRONICS V7 BLACK 動圈式麥克風',
+                address: 'taiwan'
+            }, {
+                id: 4,
+                img: 'https://cs-c.ecimg.tw/items/DJBQ3HD900CCHI6/000001_1641499048.jpg',
+                price: 3500,
+                name: 'SE ELECTRONICS V7 BLACK 動圈式麥克風',
+                address: 'taiwan'
+            }
+        ],
+    }
+]

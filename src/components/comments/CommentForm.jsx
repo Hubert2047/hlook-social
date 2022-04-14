@@ -11,7 +11,8 @@ export default function CommentForm({
     handleSubmit,
     parentId,
     initialValue,
-    subMitType
+    subMitType,
+    commentId
 }) {
 
 const[text,setText]=useState(()=>{
