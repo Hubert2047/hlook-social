@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './navigation.scss'
 export default function NavigationButton({navBtn,handleNavigation,btnId}) {       
     const navIconActiveStyle={
@@ -7,11 +8,11 @@ export default function NavigationButton({navBtn,handleNavigation,btnId}) {
          borderBottomRightRadius:'0',
      }
   return (
-    <div style={navBtn.id===btnId?navIconActiveStyle:{}} 
+    <Link to={navBtn.link} style={navBtn.id===btnId?navIconActiveStyle:{}} 
         className="navigation-buttom" 
         onClick={()=>{handleNavigation(navBtn.id)}} 
         name={navBtn.name} >
         {navBtn.icon}
-    </div>
+    </Link>
   )
 }

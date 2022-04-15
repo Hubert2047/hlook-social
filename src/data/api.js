@@ -1,13 +1,29 @@
-import { FaUserFriends, FaGamepad } from "react-icons/fa";
-import { AiFillHome } from "react-icons/ai";
-import { BsClockHistory, BsFillBookmarkStarFill, BsFillQuestionCircleFill } from "react-icons/bs";
-import { GiPodiumWinner } from "react-icons/gi";
-import { MdOutlineEventAvailable, MdOutlineRssFeed } from "react-icons/md";
-import { AiOutlineHome } from "react-icons/ai";
+import { FaUserFriends, FaGamepad, FaTools, FaBell } from "react-icons/fa";
+import {
+    BsClockHistory,
+    BsFillBookmarkStarFill,
+    BsFillQuestionCircleFill,
+    BsPhone,
+    BsSuitHeartFill,
+    BsTagsFill,
+    BsShop,
+    BsInbox
+} from "react-icons/bs";
+import { FcSportsMode } from "react-icons/fc";
+import { GiPodiumWinner, GiFreedomDove, GiClothes } from "react-icons/gi";
+import {
+    MdOutlineEventAvailable,
+    MdOutlineRssFeed,
+    MdOndemandVideo,
+    MdOutlinePets,
+    MdLocalGroceryStore,
+    MdSell
+} from "react-icons/md";
+import { HiUserGroup } from "react-icons/hi";
+import { AiOutlineHome, AiFillHome, AiFillCar } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { IoIosPeople } from "react-icons/io";
-import { MdOndemandVideo } from "react-icons/md";
-import { SiHomeassistantcommunitystore } from "react-icons/si";
+import { SiHomeassistantcommunitystore, SiFacebooklive } from "react-icons/si";
 export const user = {
     userId: 1,
     avatar: 'assets/person/hubert.jpg',
@@ -798,31 +814,36 @@ export const navBtns = [{
         id: 1,
         icon: < AiOutlineHome className = "nav-icon" / > ,
         name: 'Home',
+        link: '/'
     },
     {
         id: 2,
         icon: < CgProfile className = "nav-icon" / > ,
         name: 'Profile',
+        link: '/'
     },
     {
         id: 3,
         icon: < IoIosPeople className = "nav-icon" / > ,
         name: 'Group',
+        link: '/'
     },
     {
         id: 4,
         icon: < MdOndemandVideo className = "nav-icon" / > ,
         name: 'Videos',
+        link: '/'
     },
     {
 
         id: 5,
         icon: < SiHomeassistantcommunitystore className = "nav-icon" / > ,
         name: 'Marketplace',
+        link: '/marketplace'
     }
 
 ]
-export const sidebarItems = [{
+export const sidebarHomeItems = [{
         id: 1,
         icon: < MdOutlineRssFeed className = "sidebar__icon" / > ,
         name: 'Feed'
@@ -873,6 +894,108 @@ export const sidebarItems = [{
         id: 9,
         icon: < MdOutlineEventAvailable className = "sidebar__icon" / > ,
         name: 'Event'
+
+    }
+]
+export const sidebarMarketplaceCategoriesBtn = [{
+        id: 1,
+        icon: < BsPhone className = "sidebar__icon" / > ,
+        name: 'Electronics'
+    },
+    {
+        id: 2,
+        icon: < BsSuitHeartFill className = "sidebar__icon" / > ,
+        name: 'Family'
+
+    },
+    {
+        id: 3,
+        icon: < MdOutlinePets className = "sidebar__icon" / > ,
+        name: 'Pet'
+
+    },
+    {
+        id: 4,
+        icon: < FcSportsMode className = "sidebar__icon" / > ,
+        name: 'Sporting Goods'
+
+    },
+    {
+        id: 5,
+        icon: < FaGamepad className = "sidebar__icon" / > ,
+        name: 'Toys & Games'
+
+    },
+    {
+        id: 6,
+        icon: < FaTools className = "sidebar__icon" / > ,
+        name: 'Home Improvement Supplies'
+
+    },
+    {
+        id: 7,
+        icon: < GiFreedomDove className = "sidebar__icon" / > ,
+        name: 'Free Stuff'
+
+    },
+    {
+        id: 8,
+        icon: < BsTagsFill className = "sidebar__icon" / > ,
+        name: 'Office Supplies'
+
+    },
+    {
+        id: 9,
+        icon: < AiFillCar className = "sidebar__icon" / > ,
+        name: 'Vehicles '
+
+    },
+    {
+        id: 10,
+        icon: < GiClothes className = "sidebar__icon" / > ,
+        name: 'Apparel '
+
+    },
+    {
+        id: 11,
+        icon: < HiUserGroup className = "sidebar__icon" / > ,
+        name: 'Buy and sell groups'
+
+    }
+]
+export const sidebarMarketplaceNavBtn = [{
+        id: 1,
+        icon: < BsShop className = "sidebar__icon" / > ,
+        name: 'Browse all'
+    },
+    {
+        id: 2,
+        icon: < SiFacebooklive className = "sidebar__icon" / > ,
+        name: 'Live Shopping'
+
+    },
+    {
+        id: 3,
+        icon: < FaBell className = "sidebar__icon" / > ,
+        name: 'Notifications'
+
+    },
+    {
+        id: 4,
+        icon: < BsInbox className = "sidebar__icon" / > ,
+        name: 'Inbox'
+
+    },
+    {
+        id: 5,
+        icon: < MdLocalGroceryStore className = "sidebar__icon" / > ,
+        name: 'Buying'
+
+    },
+    {
+        id: 6,
+        icon: < MdSell className = "sidebar__icon" / > ,
+        name: 'Selling'
 
     }
 ]

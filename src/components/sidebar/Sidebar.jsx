@@ -2,8 +2,8 @@ import './sidebar.scss'
 import SidebarBtn from '../button/SidebarBtn';
 import {user} from '../../data/api.js'
 import ShortCut from '../shortcut/ShortCut';
-import SidebarItem from'../sidebar/sidebarItems/SideBarItem'
-
+import SidebarItem from'../sidebar/sidebarItem/SideBarItem'
+import {sidebarHomeItems} from '../../data/api.js'
 export default function Sidebar({className,header,sidebarItems}) {
   return (
     <div className={"sidebar " +className}>
@@ -12,7 +12,7 @@ export default function Sidebar({className,header,sidebarItems}) {
           </div>
      
           <ul className="sidebar__tool" >
-              {sidebarItems.map(sidebarItem =>{
+              {sidebarHomeItems.map(sidebarItem =>{
                 return <SidebarItem key={sidebarItem.id} sidebarItem={sidebarItem}/>
               })}
           </ul>
