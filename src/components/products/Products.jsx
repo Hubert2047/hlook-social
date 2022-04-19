@@ -1,11 +1,11 @@
 import React from 'react'
-import CategoriesProduct from './CategoriesProduct';
 import { categoryProducts } from '../../data/api';
+import ProductCategory from '../ProductCategory/ProductCategory'
 export default function Products() {
   return (
     <div>
         {categoryProducts?.map(categoryProduct =>{
-            return <CategoriesProduct key={categoryProduct.id} 
+            return <ProductCategory categorykey={categoryProduct.id} 
                                     categoryProduct={categoryProduct} 
                                     />
         })}

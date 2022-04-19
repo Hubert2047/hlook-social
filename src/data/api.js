@@ -51,7 +51,7 @@ export const user = {
                         lastName: 'Hubert'
                     },
                     isLiked: false,
-                    body: " this picture so nice",
+                    content: " this picture so nice",
                     parentId: null,
                     createdAt: "2022-04-08T16:09:44.300Z",
                 },
@@ -64,7 +64,7 @@ export const user = {
                         lastName: 'huk'
                     },
                     isLiked: false,
-                    body: " how are you",
+                    content: " how are you",
                     parentId: null,
                     createdAt: "2022-04-08T16:09:44.300Z",
                 },
@@ -77,7 +77,7 @@ export const user = {
                         lastName: 'Hubert'
                     },
                     isLiked: false,
-                    body: "Iam Fine !",
+                    content: "Iam Fine !",
                     parentId: 2,
                     createdAt: "2022-04-08T16:09:45.300Z",
                 },
@@ -90,7 +90,7 @@ export const user = {
                         lastName: 'Hubert'
                     },
                     isLiked: false,
-                    body: "How about you ?",
+                    content: "How about you ?",
                     parentId: 2,
                     createdAt: "2022-04-08T16:09:45.300Z",
                 }
@@ -120,7 +120,7 @@ export const user = {
                         lastName: 'Hubert'
                     },
                     isLiked: false,
-                    body: " this picture so nice",
+                    content: " this picture so nice",
                     parentId: null,
                     createdAt: "2022-04-08T16:09:44.300Z",
                 },
@@ -133,7 +133,7 @@ export const user = {
                         lastName: 'huk'
                     },
                     isLiked: false,
-                    body: " how are you",
+                    content: " how are you",
                     parentId: null,
                     createdAt: "2022-04-08T16:09:44.300Z",
                 },
@@ -146,7 +146,7 @@ export const user = {
                         lastName: 'Hubert'
                     },
                     isLiked: false,
-                    body: "Iam Fine !",
+                    content: "Iam Fine !",
                     parentId: 2,
                     createdAt: "2022-04-08T16:09:45.300Z",
                 }
@@ -175,7 +175,7 @@ export const user = {
                         lastName: 'Hubert'
                     },
                     isLiked: false,
-                    body: " this picture so nice",
+                    content: " this picture so nice",
                     parentId: null,
                     createdAt: "2022-04-08T16:09:44.300Z",
                 },
@@ -188,7 +188,7 @@ export const user = {
                         lastName: 'huk'
                     },
                     isLiked: false,
-                    body: " how are you",
+                    content: " how are you",
                     parentId: null,
                     createdAt: "2022-04-08T16:09:44.300Z",
                 },
@@ -201,7 +201,7 @@ export const user = {
                         lastName: 'Hubert'
                     },
                     isLiked: false,
-                    body: "Iam Fine !",
+                    content: "Iam Fine !",
                     parentId: 2,
                     createdAt: "2022-04-08T16:09:45.300Z",
                 }
@@ -230,7 +230,7 @@ export const user = {
                         lastName: 'Altenwerth',
                     },
                     isLiked: false,
-                    body: " this picture so nice",
+                    content: " this picture so nice",
                     parentId: null,
                     createdAt: "2022-04-08T16:09:44.300Z",
                 },
@@ -243,7 +243,7 @@ export const user = {
                         lastName: 'huk'
                     },
                     isLiked: false,
-                    body: " how are you",
+                    content: " how are you",
                     parentId: null,
                     createdAt: "2022-04-08T16:09:44.300Z",
                 },
@@ -256,7 +256,7 @@ export const user = {
                         lastName: 'Hubert'
                     },
                     isLiked: false,
-                    body: "Iam Fine !",
+                    content: "Iam Fine !",
                     parentId: 2,
                     createdAt: "2022-04-08T16:09:45.300Z",
                 }
@@ -285,7 +285,7 @@ export const user = {
                         lastName: 'Hubert'
                     },
                     isLiked: false,
-                    body: " this picture so nice",
+                    content: " this picture so nice",
                     parentId: null,
                     createdAt: "2022-04-08T16:09:44.300Z",
                 },
@@ -298,7 +298,7 @@ export const user = {
                         lastName: 'huk'
                     },
                     isLiked: false,
-                    body: " how are you",
+                    content: " how are you",
                     parentId: null,
                     createdAt: "2022-04-08T16:09:44.300Z",
                 },
@@ -311,7 +311,7 @@ export const user = {
                         lastName: 'Hubert'
                     },
                     isLiked: false,
-                    body: "Iam Fine !",
+                    content: "Iam Fine !",
                     parentId: 2,
                     createdAt: "2022-04-08T16:09:45.300Z",
                 }
@@ -340,7 +340,7 @@ export const user = {
                         lastName: 'Hubert'
                     },
                     isLiked: false,
-                    body: " this picture so nice",
+                    content: " this picture so nice",
                     parentId: null,
                     createdAt: "2022-04-08T16:09:44.300Z",
                 },
@@ -353,7 +353,7 @@ export const user = {
                         lastName: 'huk'
                     },
                     isLiked: false,
-                    body: " how are you",
+                    content: " how are you",
                     parentId: null,
                     createdAt: "2022-04-08T16:09:44.300Z",
                 },
@@ -366,7 +366,7 @@ export const user = {
                         lastName: 'Hubert'
                     },
                     isLiked: false,
-                    body: "Iam Fine !",
+                    content: "Iam Fine !",
                     parentId: 2,
                     createdAt: "2022-04-08T16:09:45.300Z",
                 }
@@ -395,7 +395,7 @@ export const user = {
                         lastName: 'Hubert'
                     },
                     isLiked: false,
-                    body: " this picture so nice",
+                    content: " this picture so nice",
                     parentId: null,
                     createdAt: "2022-04-08T16:09:44.300Z",
                 },
@@ -408,7 +408,7 @@ export const user = {
                         lastName: 'huk'
                     },
                     isLiked: false,
-                    body: " how are you",
+                    content: " how are you",
                     parentId: null,
                     createdAt: "2022-04-08T16:09:44.300Z",
                 },
@@ -421,7 +421,7 @@ export const user = {
                         lastName: 'Hubert'
                     },
                     isLiked: false,
-                    body: "Iam Fine !",
+                    content: "Iam Fine !",
                     parentId: 2,
                     createdAt: "2022-04-08T16:09:45.300Z",
                 }
@@ -450,7 +450,7 @@ export const user = {
                         lastName: 'Hubert'
                     },
                     isLiked: false,
-                    body: " this picture so nice",
+                    content: " this picture so nice",
                     parentId: null,
                     createdAt: "2022-04-08T16:09:44.300Z",
                 },
@@ -463,7 +463,7 @@ export const user = {
                         lastName: 'huk'
                     },
                     isLiked: false,
-                    body: " how are you",
+                    content: " how are you",
                     parentId: null,
                     createdAt: "2022-04-08T16:09:44.300Z",
                 },
@@ -476,7 +476,7 @@ export const user = {
                         lastName: 'Hubert'
                     },
                     isLiked: false,
-                    body: "Iam Fine !",
+                    content: "Iam Fine !",
                     parentId: 2,
                     createdAt: "2022-04-08T16:09:45.300Z",
                 }
@@ -762,7 +762,7 @@ export const user = {
             userSend: {
 
             },
-            body: 'hello, how are you doing?',
+            content: 'hello, how are you doing?',
             isRead: false,
         },
         {
@@ -770,7 +770,7 @@ export const user = {
             userSend: {
 
             },
-            body: 'we have a date, do you remember it ?',
+            content: 'we have a date, do you remember it ?',
             isRead: false,
         },
         {
@@ -778,7 +778,7 @@ export const user = {
             userSend: {
 
             },
-            body: 'we have a date, do you remember it ?',
+            content: 'we have a date, do you remember it ?',
             isRead: false,
         }
     ],
@@ -797,13 +797,13 @@ export const user = {
     ],
     notifications: [{
             id: 1,
-            body: {
+            content: {
 
             }
         },
         {
             id: 2,
-            body: {
+            content: {
 
             }
         }

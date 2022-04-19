@@ -1,25 +1,26 @@
-import './sidebar.scss'
-import SidebarBtn from '../button/SidebarBtn';
+import styles from './Sidebar.module.scss'
+import clsx from 'clsx'
+import SidebarBtn from '../Button/SidebarBtn';
 import {user} from '../../data/api.js'
-import ShortCut from '../shortcut/ShortCut';
-import SidebarItem from'../sidebar/sidebarItem/SideBarItem'
+import ShortCut from '../ShortCut/ShortCutCard';
+import SidebarItem from'./SidebarItem/SideBarItem'
 import {sidebarHomeItems} from '../../data/api.js'
 export default function Sidebar({className,header,sidebarItems}) {
   return (
-    <div className={"sidebar " +className}>
-          <div className="sidebar__header">
+    <div className={clsx(styles.sidebar,className)}>
+          <div className={styles.header}>
              {header}
           </div>
      
-          <ul className="sidebar__tool" >
+          <ul className={styles.tool} >
               {sidebarHomeItems.map(sidebarItem =>{
                 return <SidebarItem key={sidebarItem.id} sidebarItem={sidebarItem}/>
               })}
           </ul>
           <SidebarBtn />
-          <div className="shortcut">
+          <div className={styles.shortcut}>
             <h3>Your shortcut</h3>
-            <div className="shortcut__list">
+            <div className={styles.shortcutList}>
                 {user.shortCuts?.map(shortcut=>{
                   return <ShortCut key={shortcut.id} 
                                    avatar={shortcut.avatar} 

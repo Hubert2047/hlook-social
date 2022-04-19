@@ -1,12 +1,12 @@
 import {React,useRef }from 'react'
-import './modal.scss'
+import styles from  './Modal.module.scss'
 export default function Modal({popup,hideModal}) {
 const modal =useRef()
 const handleOnClick=(e) => {     
         hideModal()
   }
   return (
-    <div ref={modal} className="modal" onClick={handleOnClick}>
+    <div ref={modal} className={styles.modal} onClick={handleOnClick}>
         {popup}
     </div>
   )

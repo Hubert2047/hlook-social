@@ -1,23 +1,24 @@
 import React from 'react'
-import UserFriend from '../user/UserFriend'
+import clsx from 'clsx'
+import UserFriend from '../User/UserFriend'
 import { BiDotsHorizontalRounded,BiVideoPlus ,BiSearch} from "react-icons/bi";
-import './rightbar.scss'
+import styles from './Rightbar.module.scss'
 import '../../data/api.js'
 import { user } from '../../data/api.js';
 export default function Rightbar({className}) {
   return (
-    <div className={"rightbar "+className}>
-      <div className="rightbar__header">
-          <h3 className="rightbar__title">Contacts</h3>
-          <div className="rightbar__header-icons">
-              <div className="rightbar__option">
-                  <BiVideoPlus className='rightbar__option-icon'/>
+    <div className={clsx(styles.rightbar,className)}>
+      <div className={clsx(styles.header,'d-flex-r')}>
+          <h3 className={styles.title}>Contacts</h3>
+          <div className={clsx(styles.headerIcons,'d-flex-r')}>
+              <div className={styles.optionBtn}>
+                  <BiVideoPlus className={styles.optionIcon}/>
               </div>
-              <div className="rightbar__option">
-                  <BiSearch className='rightbar__option-icon'/>
+              <div className={styles.optionBtn}>
+                  <BiSearch className={styles.optionIcon}/>
               </div>
-              <div className="rightbar__option">
-                    <BiDotsHorizontalRounded className='rightbar__option-icon'/>
+              <div className={styles.optionBtn}>
+                    <BiDotsHorizontalRounded className={styles.optionIcon}/>
               </div>
           </div>
       </div>

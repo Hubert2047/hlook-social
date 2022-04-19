@@ -1,8 +1,7 @@
 import React, {useState } from 'react'
-import './comments.scss'
-import Comment from './Comment'
-import CommentForm from './CommentForm'
+import CommentForm from '../CommentForm/CommentForm'
 import {user} from '../../data/api.js'
+import Comment from '../Comment/Comment';
 
 export default function Comments({commentsApi}) {
   const[comments,setComments]=useState(commentsApi)
@@ -25,10 +24,10 @@ export default function Comments({commentsApi}) {
     setActiveComment({})
  }
 
- const handleUpdateComment =(body,commentId)=>{
+ const handleUpdateComment =(content,commentId)=>{
       let updateComments = comments.map(comment=>{
         if(comment.id === commentId){
-          return {...comment,body:body}
+          return {...comment,content:content}
         }
         return comment
       })
@@ -51,7 +50,7 @@ export default function Comments({commentsApi}) {
        initialValue={''}
        subMitType='create'
       />
-      <div className="comment__container">
+      <div>
           {rootComments.map(rootComment=>{
            return <Comment 
            key ={rootComment.id} 

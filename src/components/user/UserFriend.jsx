@@ -1,7 +1,7 @@
 import React ,{useState} from 'react'
 import UserAvatar from './UserAvatar'
 import UserName from './UserName'
-import UserProfileCard from '../card/userProfileCard/UserProfileCard';
+import UserProfileCard from '../Card/UserProfileCard/UserProfileCard';
 
 export default function UserFriend({friend}) {
  const [isShown, setIsShown] = useState(false);

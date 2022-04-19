@@ -1,5 +1,5 @@
 import React from 'react'
-import UserAvatar from '../user/UserAvatar';
+import UserAvatar from '../User/UserAvatar';
 
 export default function UserState({userAvatar,isOnline,avatarClassName,stateClassName}) {
   let isOnlineStyle={}

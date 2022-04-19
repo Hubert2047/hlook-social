@@ -1,40 +1,41 @@
 import {React,useState} from 'react'
-import UserAvatar from '../user/UserAvatar'
-import './share.scss'
+import UserAvatar from '../User/UserAvatar'
+import styles from './Share.module.scss'
 import { TiVideo } from "react-icons/ti";
 import { BsFillImageFill ,   BsFillEmojiSmileFill} from "react-icons/bs";
 import {user} from '../../data/api.js'
-import Modal from '../modal/Modal';
-import CreatePost from '../popup/createPost/CreatePost';
+import Modal from '../Modal/Modal';
+import CreatePost from '../Popup/CreatePost/CreatePost';
+import clsx from 'clsx';
 export default function Share() {
   const [isShow,setIsShow] = useState(false)
   const handleOnclick =() => {
     setIsShow(pre=>!pre)
   }
   return (
-    <div className="share">
-        <div className="share__top">
-            <UserAvatar userAvatar={user.avatar} className="share__user"/>
+    <div className={styles.share}>
+        <div className={clsx(styles.top,'d-flex-r')}>
+            <UserAvatar userAvatar={user.avatar}/>
             <input type="text" 
-                  className='share__input' 
+                  className={styles.input} 
                   placeholder ={`What's on your mind ${user.lastName} ?`}
                   onClick ={handleOnclick}
                   />
         </div>
-        <div className="share__hr"/>
-        <ul className="share__options">
-            <li className="share__option ">
-                <TiVideo className='share__option--1'/>
+        <div className={clsx('hr')}/>
+        <ul className={clsx(styles.optionBtns,'d-flex-r')}>
+            <li className={clsx(styles.optionBtn,'d-flex-r')}>
+                <TiVideo className={styles.optionBtnStyle1}/>
                 <span>Live Video</span>
             </li>
          
-             <li className="share__option ">
-                <BsFillImageFill className='share__option--2'/>
+             <li className={clsx(styles.optionBtn,'d-flex-r')}>
+                <BsFillImageFill className={styles.optionBtnStyle2}/>
                 <span>Photo/Video</span>
             </li>
 
-              <li className="share__option ">
-                <   BsFillEmojiSmileFill className='share__option--3'/>
+              <li className={clsx(styles.optionBtn,'d-flex-r')}>
+                <   BsFillEmojiSmileFill className={styles.optionBtnStyle3}/>
                 <span>Feeling/activity</span>
             </li>
         </ul>

@@ -1,19 +1,20 @@
 import React from 'react'
-import './commitCard.scss'
+import styles from  './CommitCard.module.scss'
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import clsx from 'clsx';
 export default function CommitCard({handleDeleteComment,hideModal,title,messenger}) {
   return (
-    <div onClick={(e)=>{e.stopPropagation()}} className="commit-card">
-            <div className="commit-card__title">
+    <div onClick={(e)=>{e.stopPropagation()}} className={styles.commitCard}>
+            <div className={styles.title}>
                     {title}
-                    <AiOutlineCloseCircle onClick={hideModal} className='commit-card__icon'/>
+                    <AiOutlineCloseCircle onClick={hideModal} className={styles.icon}/>
             </div>
-            <div className="commit-card__messenger">
+            <div className={styles.messenger}>
                     {messenger}
             </div>
-            <div className="commit-card__action-btns">
-                <button onClick={hideModal} className="btn commit-card__action-btn commit-card__action-btn--1">No</button>
-                <button onClick={handleDeleteComment} className="btn commit-card__action-btn commit-card__action-btn--2">Delete</button>
+            <div className={styles.actionBtns}>
+                <button onClick={hideModal} className= {clsx('btn',styles.actionBtn,styles.actionBtn,styles.white)} >No</button>
+                <button onClick={handleDeleteComment} className= {clsx('btn',styles.actionBtn,styles.blue)}>Delete</button>
             </div>
     </div>
   )

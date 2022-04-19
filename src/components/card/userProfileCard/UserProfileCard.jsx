@@ -1,28 +1,27 @@
 import React from 'react'
-import UserName from '../../user/UserName';
-import UserState from '../../user/UserState';
+import UserName from '../../User/UserName';
+import UserState from '../../User/UserState';
 import { BsPeopleFill,BsHandbagFill } from "react-icons/bs";
-import './userProfileCard.scss'
+import styles from './UserProfileCard.module.scss'
 export default function UserProfileCard({friend}) {
 
   return (
-    <div className="user-profile-card">
-        <div className="user-profile-card__avatar">
-            <UserState userAvatar={friend.avatar} 
+    <div className={styles.userProfileCard}>
+        <UserState userAvatar={friend.avatar} 
                       isOnline={friend.isOnline}
-                      stateClassName="user-profile-card__state"
-                      avatarClassName='user-profile-card__avatar'
-            />
-        </div>
-        <div className="user-profile-card__content">
-            <UserName className="user-profile-card__user-name" firstName={friend.firstName} lastName={friend.lastName}/>
-            <div className="user-profile-card__infor">
-              <BsPeopleFill className="user-profile-card__icon"/>
-              <p className="user-profile-card__text">41 mutual friends including Nguyễn Yến and La Thái Mẫn</p>
+                      stateClassName={styles.userState}
+                      avatarClassName={styles.userAvatar}
+        />
+
+        <div className={styles.content}>
+            <UserName className={styles.userName} firstName={friend.firstName} lastName={friend.lastName}/>
+            <div className={styles.userInfor}>
+              <BsPeopleFill className={styles.inforIcon}/>
+              <p className={styles.inforText}>41 mutual friends including Nguyễn Yến and La Thái Mẫn</p>
             </div>
-            <div className="user-profile-card__infor">
-              <BsHandbagFill className="user-profile-card__icon"/>
-              <p className="user-profile-card__text">Worked at FT Island Vietnamese Fanclub</p>
+            <div className={styles.userInfor}>
+              <BsHandbagFill className={styles.inforIcon}/>
+              <p className={styles.inforText}>Worked at FT Island Vietnamese Fanclub</p>
             </div>
         </div>
     </div>

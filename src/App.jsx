@@ -2,22 +2,23 @@
 import { BrowserRouter as Router,Routes,
   Route
 } from "react-router-dom";
-import Error from "./pages/error/Error";
-import Home from "./pages/home/Home";
-import MarketPlace from "./pages/marketPlace/MarketPlace";
-import Video from "./pages/videos/Video";
+import GlobalStyles from "./components/GlobalStyle/GlobalStyles";
+import Header from "./components/Header/Header";
+import Error from "./Pages/error/Error";
+import Home from "./Pages/Home/Home";
+import MarketPlace from "./Pages/MarketPlace/MarketPlace";
 function App() {    
     return ( 
-      <div>
-        <Video/>
-      </div>
-        // <Router>
-        //           <Routes >
-        //             <Route path="/" element={<Home/>}/>
-        //             <Route path="/marketPlace" element={<MarketPlace/>}/>
-        //             <Route path="*" element={<Error/>}/>
-        //       </Routes>
-        // </Router>
+            <GlobalStyles>
+                  <Router>
+                        <Header/>
+                        <Routes >
+                              <Route path="/" element={<Home/>}/>
+                              <Route path="/marketPlace" element={<MarketPlace/>}/>
+                              <Route path="*" element={<Error/>}/>
+                        </Routes>             
+                  </Router>      
+            </GlobalStyles>
     )
 }
 
