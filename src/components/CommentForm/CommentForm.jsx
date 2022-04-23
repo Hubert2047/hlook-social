@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useRef } from 'react'
 import UserAvatar from '../User/UserAvatar'
 import { BsEmojiSmile } from "react-icons/bs";
 import { MdPhotoCamera } from "react-icons/md";
@@ -13,19 +13,20 @@ export default function CommentForm({
     parentId,
     initialValue,
     subMitType,
+    isActiveCommentBox,
+    className
 }) {
 
 const[text,setText]=useState(()=>{
       return  initialValue?initialValue:''
-    })
-
+    })   
 const onSubmit=(e)=>{
     e.preventDefault()
     if(subMitType==='create'){
         handleSubmit({
             id: Math.random().toString(36).substr(2, 9),
             user:user,
-            body: text,
+            content: text,
             parentId:parentId?parentId: null,
             createdAt: new Date().toLocaleString(),
         })
@@ -36,12 +37,13 @@ const onSubmit=(e)=>{
     setText('')
 }
   return (
-    <div>
+    <div className={className}>
         <form onSubmit={onSubmit} className={styles.commentForm}>
             <UserAvatar userAvatar={userAvatar} />
             <div className={styles.body}>
                 <div  className={styles.inputBox}>
                     <input
+                        type='text'
                         value={text}
                         placeholder={'Write an answer ...'}
                         onChange={(e)=>{

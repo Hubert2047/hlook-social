@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import clsx from 'clsx'
 import styles from './Comment.module.scss'
 import{calDate} from '../../functions/functions.js'
 import CommentForm from '../CommentForm/CommentForm'
@@ -16,6 +17,7 @@ export default function Comment({
   setActiveComment,
   addComment,
   handleUpdateComment,
+  isActiveCommentBox
 }) {
   const [isCommentLiked,setIsCommentLiked]=useState(comment.isLiked)
   const [commentLikedIconStyle,setCommentLikedIconStyle]=useState({})
@@ -97,18 +99,22 @@ export default function Comment({
           {isShowCommitDelete && <Modal hideModal={hideModal} popup={<CommitCard handleDeleteComment={()=>handleDeleteComment(comment.id)} hideModal={hideModal} title={'Delete Comment?'} messenger={'Are you sure you want to delete this comment?'}/>}/>}
           {/* form */}
 
-          {isReply && <CommentForm 
+        {isReply &&  <CommentForm 
+                                  className={clsx(styles.reply,{[styles.activeReplyCommentForm]:isReply})}
                                   userAvatar={user.avatar}
                                   handleSubmit={addComment}
                                   parentId={commentParentId}
                                   initialValue={`@${comment.user.lastName} ${comment.user.firstName}  `}
                                   subMitType='create'
+                                  isActiveCommentBox={isActiveCommentBox}
                                   />}
-          {isEdit && <CommentForm 
+          {isEdit &&<CommentForm 
+                                  className={clsx(styles.edit,{[styles.activeEditcommentForm]:isEdit})}
                                   userAvatar={user.avatar}
                                   handleSubmit={(content)=>{handleUpdateComment(content,comment.id)}}
                                   initialValue={`${comment.content} `}
                                   subMitType = 'edit'
+                                  isActiveCommentBox={isActiveCommentBox}
                                   />}
 
 
@@ -125,6 +131,7 @@ export default function Comment({
               setActiveComment={setActiveComment}
               addComment={addComment} 
               handleUpdateComment={handleUpdateComment}
+              isActiveCommentBox={isActiveCommentBox}
               />
             })}
           </div>

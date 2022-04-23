@@ -29,10 +29,11 @@ export default function MarketPlace() {
                     <a href="#" className={styles.currentFilterLocation}> New Taipei City</a>
                 </div>
                 <ul  >
-                  <h2 className={styles.categoryHeading}>Categories</h2>
-                  {sidebarMarketplaceCategoriesBtn.map(sidebarItem =>{
-                    return <SideBarItem key={sidebarItem.id} sidebarItem={sidebarItem}/>
-                  })}
+                    <h2 className={styles.categoryHeading}>Categories</h2>
+
+                    {sidebarMarketplaceCategoriesBtn.map(sidebarItem =>{
+                      return <SideBarItem key={sidebarItem.id} sidebarItem={sidebarItem}/>
+                    })}
                 </ul>
             </div>
 

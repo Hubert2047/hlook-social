@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useContext} from 'react'
 import clsx from 'clsx'
 import UserPost from '../User/UserPost'
 import styles from './Post.module.scss'
@@ -7,8 +7,9 @@ import { BsEmojiSmileFill } from "react-icons/bs";
 import { AiFillLike,AiOutlineLike } from "react-icons/ai";
 import { FaRegCommentAlt ,FaRegShareSquare} from "react-icons/fa";
 import Comments from '../Comments/Comments';
-import {user} from '../../data/api.js'
+import { Context } from '../Context/Context';
 export default function Post({post}) {
+    const user =useContext(Context)
     const [isActiveCommentBox,setIsActiveCommentBox]=useState(false)
     const [likeCount,setLikeCount]=useState(post.likeCount)
     const [isLiked,setIsLiked] =useState(false)
@@ -77,7 +78,7 @@ export default function Post({post}) {
                     </div>
             </div>
             {/* comments */}
-         {isActiveCommentBox && <Comments commentsApi={post.comments} currentUserId='1'/>}
+            <Comments commentsApi={post.comments}  isActiveCommentBox={isActiveCommentBox}/>
         </div>
 
     </div>

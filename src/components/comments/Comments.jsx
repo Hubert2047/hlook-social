@@ -1,9 +1,11 @@
 import React, {useState } from 'react'
+import clsx from 'clsx'
 import CommentForm from '../CommentForm/CommentForm'
 import {user} from '../../data/api.js'
 import Comment from '../Comment/Comment';
+import styles from './Comments.module.scss'
 
-export default function Comments({commentsApi}) {
+export default function Comments({commentsApi,isActiveCommentBox}) {
   const[comments,setComments]=useState(commentsApi)
   const[activeComment,setActiveComment]=useState({})
   let rootComments = comments
@@ -43,12 +45,13 @@ export default function Comments({commentsApi}) {
  }
 
   return (
-    <div>
+    <div className={clsx(styles.comments,{[styles.active]:isActiveCommentBox})}>
       <CommentForm
        userAvatar ={user.avatar}
        handleSubmit={handleAddComment} 
        initialValue={''}
        subMitType='create'
+       isActiveCommentBox={isActiveCommentBox}
       />
       <div>
           {rootComments.map(rootComment=>{
@@ -56,13 +59,13 @@ export default function Comments({commentsApi}) {
            key ={rootComment.id} 
            comment={rootComment}  
            replies={getReplies(rootComment.id)} 
-           getReplies={getReplies} 
            DeleteComment={DeleteComment}
            activeComment={activeComment}
            setActiveComment={setActiveComment}
            addComment={handleAddComment}
            handleUpdateComment={handleUpdateComment}
            commentParentId={null}
+           isActiveCommentBox={isActiveCommentBox}
            />
           })}
       </div>

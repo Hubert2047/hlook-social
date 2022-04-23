@@ -2,23 +2,20 @@
 import { BrowserRouter as Router,Routes,
   Route
 } from "react-router-dom";
-import GlobalStyles from "./components/GlobalStyle/GlobalStyles";
 import Header from "./components/Header/Header";
-import Error from "./Pages/error/Error";
-import Home from "./Pages/Home/Home";
-import MarketPlace from "./Pages/MarketPlace/MarketPlace";
+import Error from "./pages/Error/Error";
+import Home from "./pages/Home/Home";
+import MarketPlace from "./pages/MarketPlace/MarketPlace";
 function App() {    
     return ( 
-            <GlobalStyles>
-                  <Router>
-                        <Header/>
-                        <Routes >
-                              <Route path="/" element={<Home/>}/>
-                              <Route path="/marketPlace" element={<MarketPlace/>}/>
-                              <Route path="*" element={<Error/>}/>
-                        </Routes>             
-                  </Router>      
-            </GlobalStyles>
+      <Router>
+            <Header/>
+            <Routes >
+                  <Route path="/" element={<Home/>}/>
+                  <Route path="/marketPlace" element={<MarketPlace/>}/>
+                  <Route path="*" element={<Error/>}/>
+            </Routes>             
+      </Router>      
     )
 }
 
